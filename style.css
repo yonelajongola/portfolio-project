@@ -153,15 +153,12 @@ button::after {
   padding: 120px 60px;
 }
 
-.logo {
-  max-height: 50px;
-  border-radius: 40%;
+.navbar {
+  padding: 1rem 1.5rem;
 }
-
-nav {
-  padding: 10px 0;
+.navbar-toggler {
+  border-color: rgba(0, 0, 0, 0.1);
 }
-
 nav ul {
   padding: 0;
   margin: 0;
@@ -184,9 +181,20 @@ nav a:hover,
 nav li.active a {
   color: var(--branding-color);
 }
+.navbar-brand img {
+  max-height: 50px; 
+}
+
+.logo {
+  max-width: 100%; 
+  height: auto;
+}
+
 
 footer {
   margin: 0px 0;
+  padding: 20px;
+  background-color: #e9ecef; 
 }
 
 footer .contact-box {
@@ -197,11 +205,11 @@ footer .contact-box {
   
 }
 footer .contact-box h1 {
-  font-size: 10px;
+  font-size: 2rem;
 }
-footer .contact-box p {
+footer .contact-box 2 {
   margin: 0;
-  font-size: 10px;
+  font-size: 1.23rem;
 }
 
 footer .email-link {
@@ -229,7 +237,19 @@ footer .social-links a:hover {
   background: var(--branding-color);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 770px) {
+ .hero {
+      padding: 50px 20px;
+  }
+
+  .hero h1 {
+      font-size: 2rem; 
+  }
+
+  .hero h2 {
+      font-size: 1.25rem; 
+  }
+
   h1 {
     font-size: 40px;
     line-height: 1;
@@ -254,11 +274,12 @@ footer .social-links a:hover {
     position: relative;
   }
 }
-img.img-fluid {
+.img-fluid {
   border-radius: 25%;
   max-width: 100%;
   height: auto;
 }
+
 .text-center {
   font-size: 10px;
 }
@@ -267,6 +288,7 @@ img.img-fluid {
 }
 .halo {
   background: pink;
+}
 }
 .pic {
  width: 150px; 
