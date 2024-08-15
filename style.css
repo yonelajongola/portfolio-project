@@ -43,6 +43,7 @@ p {
   background: var(--secondary-color);
   text-align: center;
   padding: 80px 20px;
+  padding-bottom:50px;
   margin-top: 160px;
   color: whitesmoke;
 }
@@ -190,8 +191,10 @@ footer {
 
 footer .contact-box {
   padding: 40px 20px;
-  border-radius: 10px;
+  border-radius: 5px;
   font-size: 10px;
+  background: #f8f9fa;
+  
 }
 footer .contact-box h1 {
   font-size: 10px;
@@ -212,7 +215,7 @@ footer .email-link:hover {
 }
 
 footer .social-links a {
-  margin: 0 20px;
+  margin: 0 10px;
   color: var(--branding-color);
   background: whitesmoke;
   padding: 10px 9px;
@@ -248,10 +251,13 @@ footer .social-links a:hover {
   .project-desciption {
     padding: 0;
     text-align: center;
+    position: relative;
   }
 }
-.img-fluid {
+img.img-fluid {
   border-radius: 25%;
+  max-width: 100%;
+  height: auto;
 }
 .text-center {
   font-size: 10px;
