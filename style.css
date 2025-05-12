@@ -346,3 +346,7 @@ footer .social-links a:hover {
                 box-shadow: 0 0 20px rgba(255, 255, 255, 1);
             }
         }
+.social-icon:hover {
+  color: #007bff; /* Bootstrap primary color or your preferred color */
+  transition: color 0.3s ease;
+}
