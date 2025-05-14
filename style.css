@@ -243,7 +243,7 @@ footer .social-links a:hover {
   }
 
   .hero h1 {
-      font-size: 2rem; 
+    font-size: 2rem;
   }
 
   .hero h2 {
@@ -253,10 +253,11 @@ footer .social-links a:hover {
   h1 {
     font-size: 40px;
     line-height: 1;
+    font-size: 1.25rem;
   }
 
   h2 {
-    font-size: 35px;
+    font-size: 1.25rem;
   }
 
   h3 {
@@ -311,6 +312,15 @@ footer .social-links a:hover {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /
 }
 
+.card-img-top {
+  max-height: 200px;
+  object-fit: cover; 
+  width: 100%;
+  border-radius: 10px;
+}
+.card {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+} 
 
 #pic::after {
   content: '';
