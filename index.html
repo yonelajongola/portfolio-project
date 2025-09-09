@@ -1,89 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Yonela Jongola is a front-end engineer based in South Africa."
-    />
-    <title>Front-end developer - Yonela Jongola</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
-    <script
-      src="https://kit.fontawesome.com/ddc3ee268a.js"
-      crossorigin="anonymous"
-    ></script>
-  
-    <br>
-    <div class="hero">
-     <!-- Hero Section -->
-  <div class="hero text-center py-5">
-    <p>Hello, I'm</p>
-    <h1>Yonela Jongola</h1>
-    <h2 class="mb-5">Front-end developer based in Cape Town, South Africa</h2>
-    <a class='btn btn-branding' href='/contact' title='Contact me'>Contact me</a>
-  </div>
-
-  <p class="text-center m-5">Check out some of my featured projects below</p>
-
-  <!-- Projects Section -->
-  <div class="container mb-5">
-    <div class="row g-4">
-      <!-- Project Card 1 -->
-      <div class="col-lg-3 col-md-6">
-        <div class="card h-100">
-          <img src="images/project1.png" class="card-img-top" alt="Project 1 Preview" />
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Registration Form</h5>
-            <span class="card-text flex-grow-1 text-muted">
-              Built a landing page about Yogurt using HTML, CSS, and JavaScript, with interactive features.
-            </span>
-            <a href="/work.html" class="btn btn-outline-primary mt-auto">Learn More</a>
-          </div><script
-    src="https://kit.fontawesome.com/ddc3ee268a.js"
-    crossorigin="anonymous"
-  ></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Front-end developer - Yonela Jongola</title>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/ddc3ee268a.js" crossorigin="anonymous"></script>
   <style>
     /* Optional: customize logo size */
     .logo-img {
       height: 50px;
       width: auto;
     }
-    /* Optional: add some spacing for logo */
+    /* Spacing for header container */
     .header-container {
       padding: 0.5rem 1rem;
     }
   </style>
 </head>
 <body>
-  <!-- Header with logo on the left and navbar on the right -->
+  <!-- Header: logo on the left, navbar on the right (collapsible) -->
   <div class="d-flex align-items-center justify-content-between bg-light fixed-top header-container">
-    <!-- Logo -->
+    <!-- Logo on the far left -->
     <a href="/" class="d-flex align-items-center">
       <img src="images/logo.png" alt="Logo" class="logo-img" />
     </a>
-    <!-- Navbar -->
+    <!-- Navbar with collapse -->
     <nav class="navbar navbar-expand-lg p-0">
       <div class="container-fluid p-0">
-        <!-- Toggle button for small screens -->
+        <!-- Hamburger toggle button for small screens -->
         <button
           class="navbar-toggler"
           type="button"
@@ -95,7 +46,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- Collapsible menu aligned to the right -->
+        <!-- Collapsible menu aligned to right -->
         <div class="collapse navbar-collapse" id="navbarRight">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
@@ -215,44 +166,40 @@
 
   <!-- Footer Section -->
 <footer class="mt-5 bg-light pt-4 pb-2">
-  <div class="container text-center">
-    <!-- Contact Box -->
-    <div class="contact-box justify-content-between mb-3 d-flex flex-column flex-md-row align-items-center">
-      <div>
-        <h3>Work Inquiry</h3>
-        <p class="text-muted mb-0">Let's work together</p>
+    <div class="container text-center">
+      <!-- Contact box -->
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-3">
+        <div>
+          <h3>Work Inquiry</h3>
+          <p class="text-muted mb-0">Let's work together</p>
+        </div>
+        <a class="btn btn-primary mt-3 mt-md-0" href="/contact" title="Contact Yonela">Contact me</a>
       </div>
-      <a class="btn btn-primary mt-3 mt-md-0" href="/contact" title="Contact Vinnie">Contact me</a>
+      <!-- Email -->
+      <div class="d-flex justify-content-center mb-3">
+        <a href="mailto:zjongola@gmail.com" class="text-decoration-none" style="font-weight: 500;">zjongola@gmail.com</a>
+      </div>
+      <!-- Social links -->
+      <div class="d-flex justify-content-center mb-3">
+        <a href="https://github.com/yonelajongola" target="_blank" rel="noopener noreferrer" class="mx-3 text-dark" aria-label="GitHub">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a href="https://www.instagram.com/yonela_jongola" target="_blank" rel="noopener noreferrer" class="mx-3 text-dark" aria-label="Instagram">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <a href="https://twitter.com/yonelajongola" target="_blank" rel="noopener noreferrer" class="mx-3 text-dark" aria-label="Twitter">
+          <i class="fab fa-twitter fa-2x"></i>
+        </a>
+      </div>
+      <!-- Credit -->
+      <p class="small text-muted">
+        This website was coded by YONELA JONGOLA, and is
+        <a href="https://github.com/yonelajongola/portfolio-project" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+          open-sourced
+        </a>
+      </p>
     </div>
+  </footer>
 
-    <!-- Email Link -->
-    <div class="d-flex justify-content-center mb-3">
-      <a href="mailto:zjongola@gmail.com" class="email-link text-decoration-none" title="Email Yonela" style="font-weight: 500;">
-        zjongola@gmail.com
-      </a>
-    </div>
-
-    <!-- Social Links -->
-    <div class="social-links d-flex justify-content-center mb-3">
-      <a href="https://github.com/yonelajongola" target="_blank" rel="noopener noreferrer" class="mx-3 text-dark social-icon" title="GitHub Profile" aria-label="GitHub">
-        <i class="fab fa-github fa-2x"></i>
-      </a>
-      <a href="https://www.instagram.com/yonela_jongola" target="_blank" rel="noopener noreferrer" class="mx-3 text-dark social-icon" title="Instagram Profile" aria-label="Instagram">
-        <i class="fab fa-instagram fa-2x"></i>
-      </a>
-      <a href="https://twitter.com/yonelajongola" target="_blank" rel="noopener noreferrer" class="mx-3 text-dark social-icon" title="Twitter Profile" aria-label="Twitter">
-        <i class="fab fa-twitter fa-2x"></i>
-      </a>
-    </div>
-
-    <!-- Credit Text -->
-    <span class="text-center mt-3 small text-muted">
-      This website was coded by YONELA JONGOLA, and is
-      <a href="https://github.com/yonelajongola/portfolio-project" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-        open-sourced
-      </a>
-    </span>
-  </div>
-</footer>
 </body>
 </html>
