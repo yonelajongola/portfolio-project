@@ -32,53 +32,67 @@
       src="https://kit.fontawesome.com/ddc3ee268a.js"
       crossorigin="anonymous"
     ></script>
-  </head>
-  <body>
-    <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-          <nav class="d-flex justify-content-between">
-        <a class="navbar-brand" href="/" title="Homepage"><img
-          src="images/logo.png"
-          class="logo d-none d-md-block"
-          alt="Yonela Logo"
-        />
-        <img
-          src="images/logo.png"
-          class="logo d-block d-md-none"
-          alt="Yonela Logo"
-        /></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <script
+    src="https://kit.fontawesome.com/ddc3ee268a.js"
+    crossorigin="anonymous"
+  ></script>
+  <style>
+    /* Optional: customize logo size */
+    .logo-img {
+      height: 50px;
+      width: auto;
+    }
+    /* Optional: add some spacing for logo */
+    .header-container {
+      padding: 0.5rem 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with logo on the left and navbar on the right -->
+  <div class="d-flex align-items-center justify-content-between bg-light fixed-top header-container">
+    <!-- Logo -->
+    <a href="/" class="d-flex align-items-center">
+      <img src="your-logo.png" alt="Logo" class="logo-img" />
+    </a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg p-0">
+      <div class="container-fluid p-0">
+        <!-- Toggle button for small screens -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarRight"
+          aria-controls="navbarRight"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+        <!-- Collapsible menu aligned to the right -->
+        <div class="collapse navbar-collapse" id="navbarRight">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/" tilte="Homepage">Home</a>
+              <a class="nav-link active" aria-current="page" href="/" title="Homepage">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/about.html" 
-              title="About Yonela Jongola">About</a>
+              <a class="nav-link" href="/contact.html#contact" title="Contact Yonela Jongola">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/work.html"
-              title="Contact Yonela Jongola">Work</a>
+              <a class="nav-link" href="/work.html" title="Contact Yonela Jongola">Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/certificates.html"
-              title="Contact Yonela Jongola">Certificates</a>
+              <a class="nav-link" href="/certificates.html" title="Contact Yonela Jongola">Certificates</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/contact.html#contact"
-               title="Contact Yonela Jongola">Contact</a>
+              <a class="nav-link" href="/about.html" title="About Yonela Jongola">About</a>
             </li>
           </ul>
         </div>
       </div>
-
-      </nav>
-    </div>
+    </nav>
+  </div>
     </div>
     <div class="content-container container">
       <div class="content">
@@ -189,4 +203,5 @@
       </footer>
     </body>
   </html>
+
   
