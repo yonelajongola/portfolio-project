@@ -1,238 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Yonela Jongola is a front-end engineer based in South Africa."
-    />
-    <title>Front-end developer - Yonela Jongola</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/ddc3ee268a.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body> 
-    <div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-  <div class="container-fluid">
-    <!-- Toggle button on the far left -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <!-- Collapsible menu -->
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/" title="Homepage">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/contact.html#contact" title="Contact Yonela Jongola">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/work.html" title="Contact Yonela Jongola">Work</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/certificates.html" title="Contact Yonela Jongola">Certificates</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/about.html" title="About Yonela Jongola">About</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-  
-    </div>
-    <div class="text-wrapper" class="Textcolor">
-    <h1 >Certificates</h1>
-    <h3 >Front-end developer from East London, South Africa</h3>
-    </div>
-    <div class="container text-center"class="Textcolor">
-    
-      <div class="row justify-content-center">
-  
-        <div class="col-md-6 mb-4">
-          
-          <h3 class="Text">Web Design </h3>
-          <span>Passed the basic course</span>
-          
-          <img
-          src="images/introduction.png"
-          class="img-fluid rounded-2 w-100 mx-80 max-height-440"
-          alt="img web design"
-          
-          />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Front-end developer - Yonela Jongola</title>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <!-- Font Awesome for icons -->
+  <script
+    src="https://kit.fontawesome.com/ddc3ee268a.js"
+    crossorigin="anonymous"
+  ></script>
+  <style>
+    /* Optional: customize logo size */
+    .logo-img {
+      height: 50px;
+      width: auto;
+    }
+    /* Optional: add some spacing for logo */
+    .header-container {
+      padding: 0.5rem 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with logo on the left and navbar on the right -->
+  <div class="d-flex align-items-center justify-content-between bg-light fixed-top header-container">
+    <!-- Logo -->
+    <a href="/" class="d-flex align-items-center">
+      <img src="your-logo.png" alt="Logo" class="logo-img" />
+    </a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg p-0">
+      <div class="container-fluid p-0">
+        <!-- Toggle button for small screens -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarRight"
+          aria-controls="navbarRight"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Collapsible menu aligned to the right -->
+        <div class="collapse navbar-collapse" id="navbarRight">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/" title="Homepage">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html#contact" title="Contact Yonela Jongola">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/work.html" title="Contact Yonela Jongola">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/certificates.html" title="Contact Yonela Jongola">Certificates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html" title="About Yonela Jongola">About</a>
+            </li>
+          </ul>
         </div>
-        <div class="col-md-6 mb-4"> 
-          
-          <h3> Web Development </h3>
-          <span>Passed the basic course </span>
-          
-          <img
-          src="images/plus.png"
-          class="img-fluid rounded-2 w-100 mx-80 max-height-440"
-          alt="img account"
-          
-          />
-        </div> 
-
-        <div class="col-md-6 mb-4"> 
-          
-          <h3> Data, Databases and mining </h3>
-          <span>Passed the basic course </span>
-          
-          <img
-          src="images/Alison_certificate_data,_databases_and_mining.pdf"
-          class="img-fluid rounded-2 w-100 mx-80 max-height-440"
-          alt="img account"
-          
-          />
-        </div> 
-
-        <div class="col-md-6 mb-4"> 
-          
-          <h3> Full stack Development </h3>
-          <span>Passed the basic course </span>
-          
-          <img
-          src="images/Yonela-2-687234D924879-2025-07-12-12-11-37.pdf"
-          class="img-fluid rounded-2 w-100 mx-80 max-height-440"
-          alt="img account"
-          
-          />
-        </div> 
-
-        <div class="col-md-6 mb-4"> 
-          
-          <h3> Ethical Hacking </h3>
-          <span>Passed the basic course </span>
-          
-          <img
-          src="images/_certificate_zjongola-gmail-com_95020cb0-7cc5-4acc-b74a-2e9708c99db5.pdf"
-          class="img-fluid rounded-2 w-100 mx-80 max-height-440"
-          alt="img account"
-          
-          />
-        </div> 
-
-        <div class="col-md-6 mb-4"> 
-          
-          <h3> Junior Cybersecurity Analysis Career Path Exam</h3>
-          <span>Passed the basic course </span>
-          
-          <img
-          src="images/101424on20250603_132641_certificate_zjongola-gmail-com_ca7bca12-8ce1-416c-841b-0ec68fba8181.pdf"
-          class="img-fluid rounded-2 w-100 mx-80 max-height-440"
-          alt="img account"
-          
-          />
-        </div> 
-        <div class="row justify-content-center">
-          <div class="col-md-6 mb-4">            
-            
-            <h3 >Introdction to Front-end Web Development</h3>
-            <span>Passed the basic course</span>
-            
-            <img
-            src="images/cert.png"
-            class="img-fluid rounded-2 w-100 mx-80 max-height-400"
-            alt="img sertif development"
-            
-            />
-          </div>
-          <div class="col-md-6 mb-4">
-            
-            <h3 >  Responsive Web Development    </h3>
-            <span> Passed the Responsive Web Development </span>
-               <img src="/react.cert.png"
-               class="img-fluid rounded-2 w-90 mx-50 max-height-300"
-               alt="img sertif development"
-             />
-             </div>
       </div>
+    </nav>
   </div>
-      <footer class="container mt-5">
-          <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
-            <div>
-              <h3>Work Inquiry</h3>
-              <p class="text-muted">Let's work together</p>
-            </div>
-            <div>
-              <a class='btn btn-branding mt-3' href='/contact' title='Contact Yonela Jongola'>
-                Contact me
-              </a>
-            </div>
-          </div>
-          <div class="d-flex justify-content-center mb-5">
-            <a
-              href="mailto:zjongola@gmail.com"
-              class="email-link"
-              title="Email yonela Jongola"
-            >
-              zjongola@gmail.com
-            </a>
-          </div>
-          <div class="social-links d-flex justify-content-center mb-3">
-            <a
-              href="https://www.github.com/yonelajongola"
-              target="_blank"
-              title="GitHub Profile"
-              class="mx-2"
-            >
-              <i class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://www.instagram.com/yonelajongola"
-              target="_blank"
-              title="instragram Profile"
-              class="mx-2"
-            >
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a
-              href="https://www.twitter.com/yonelajongola"
-              target="_blank"
-              title="Twitter Profile"
-              class="mx-2"
-            >
-              <i class="fab fa-twitter"></i>
-            </a>
-          </div>
-          <p class="text-center mt-5">
-             This website was coded by YONELA JONGOLA, and is
-            <a
-              href="https://github.com/yonelajongola/portfolio-project"
-              target="_blank"
-            >
-              open-sourced
-            </a>
-            
-          </p>
-        </footer>
-      </body>
-    </html>
-    
 
+  <!-- Page content below the header -->
+  <div style="margin-top: 80px; padding: 20px;">
+    <h1>Certificates</h1>
+    <h3>Front-end developer from East London, South Africa</h3>
+    <!-- Your content continues here... -->
+    <!-- (rest of your content) -->
+  </div>
 
+  <!-- Footer -->
+  <footer class="container mt-5">
+    <!-- Your footer content -->
+    <!-- ... -->
+  </footer>
 
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
