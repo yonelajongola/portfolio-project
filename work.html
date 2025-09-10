@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Front-end developer - Yonela Jongola</title>
   <!-- Bootstrap CSS -->
@@ -11,33 +10,31 @@
     rel="stylesheet"
   />
   <!-- Font Awesome for icons -->
-  <script
-    src="https://kit.fontawesome.com/ddc3ee268a.js"
-    crossorigin="anonymous"
-  ></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/ddc3ee268a.js" crossorigin="anonymous"></script>
   <style>
     /* Optional: customize logo size */
     .logo-img {
       height: 50px;
       width: auto;
     }
-    /* Optional: add some spacing for logo */
+    /* Spacing for header container */
     .header-container {
       padding: 0.5rem 1rem;
     }
   </style>
 </head>
 <body>
-  <!-- Header with logo on the left and navbar on the right -->
+  <!-- Header: logo on the left, navbar on the right (collapsible) -->
   <div class="d-flex align-items-center justify-content-between bg-light fixed-top header-container">
-    <!-- Logo -->
+    <!-- Logo on the far left -->
     <a href="/" class="d-flex align-items-center">
-      <img src="your-logo.png" alt="Logo" class="logo-img" />
+      <img src="images/logo.png" alt="Logo" class="logo-img" />
     </a>
-    <!-- Navbar -->
+    <!-- Navbar with collapse -->
     <nav class="navbar navbar-expand-lg p-0">
       <div class="container-fluid p-0">
-        <!-- Toggle button for small screens -->
+        <!-- Hamburger toggle button for small screens -->
         <button
           class="navbar-toggler"
           type="button"
@@ -49,7 +46,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- Collapsible menu aligned to the right -->
+        <!-- Collapsible menu aligned to right -->
         <div class="collapse navbar-collapse" id="navbarRight">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
@@ -72,7 +69,18 @@
       </div>
     </nav>
   </div>
-    <div class="content-container container">
+
+  <!-- Main content starts below the fixed header -->
+  <div style="margin-top: 80px; padding: 20px;">
+    <!-- Example hero section -->
+    <div class="hero text-center py-5">
+      <p>Hello, I'm</p>
+      <h1>Yonela Jongola</h1>
+      <h2 class="mb-5">Front-end developer based in Cape Town, South Africa</h2>
+      <a class='btn btn-primary' href='/contact' title='Contact me'>Contact me</a>
+    </div>
+   
+     <div class="content-container container">
       <div class="content">
         <h1 class="mb-5">Take a look at what I've been working on!</h1>
 
@@ -191,61 +199,46 @@
           </div>
         </div>
       </div>
-    </div>
-    <footer class="container mt-5">
-      <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
+  </div>
+
+  <!-- Footer -->
+  <footer class="mt-5 bg-light pt-4 pb-2">
+    <div class="container text-center">
+      <!-- Contact box -->
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-3">
         <div>
           <h3>Work Inquiry</h3>
-          <p class="text-muted">Let's work together</p>
+          <p class="text-muted mb-0">Let's work together</p>
         </div>
-        <div>
-          <a class='btn btn-branding mt-3' href='/contact' title='Contact Yonela Jongola'>
-            Contact me
-          </a>
-        </div>
+        <a class="btn btn-primary mt-3 mt-md-0" href="/contact" title="Contact Yonela">Contact me</a>
       </div>
-      <div class="d-flex justify-content-center mb-5">
-        <a
-          href="mailto:zjongola@gmail.com"
-          class="email-link"
-          title="Email yonela Jongola"
-        >
-          zjongola@gmail.com
-        </a>
+      <!-- Email -->
+      <div class="d-flex justify-content-center mb-3">
+        <a href="mailto:zjongola@gmail.com" class="text-decoration-none" style="font-weight: 500;">zjongola@gmail.com</a>
       </div>
-      <div class="social-links d-flex justify-content-center">
-        <a
-          href="https://www.github.com/yonelajongola"
-          target="_blank"
-          title="GitHub Profile"
-        >
-          <i class="fab fa-github"></i>
+      <!-- Social links -->
+      <div class="d-flex justify-content-center mb-3">
+        <a href="https://github.com/yonelajongola" target="_blank" rel="noopener noreferrer" class="mx-3 text-dark" aria-label="GitHub">
+          <i class="fab fa-github fa-2x"></i>
         </a>
-        <a
-          href="https://www.instragram.com/yonelajongola"
-          target="_blank"
-          title="instragram Profile"
-        >
-          <i class="fab fa-instagram"></i>
+        <a href="https://www.instagram.com/yonela_jongola" target="_blank" rel="noopener noreferrer" class="mx-3 text-dark" aria-label="Instagram">
+          <i class="fab fa-instagram fa-2x"></i>
         </a>
-        <a
-          href="https://www.twitter.com/yonelajongola"
-          target="_blank"
-          title="Twitter Profile"
-        >
-          <i class="fab fa-twitter"></i>
+        <a href="https://twitter.com/yonelajongola" target="_blank" rel="noopener noreferrer" class="mx-3 text-dark" aria-label="Twitter">
+          <i class="fab fa-twitter fa-2x"></i>
         </a>
       </div>
-      <p class="text-center mt-5">
+      <!-- Credit -->
+      <p class="small text-muted">
         This website was coded by YONELA JONGOLA, and is
-        <a
-          href="https://github.com/yonelajongola/portfolio-project"
-          target="_blank"
-        >
+        <a href="https://github.com/yonelajongola/portfolio-project" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
           open-sourced
         </a>
       </p>
-    </footer>
-  </body>
-</html>
+    </div>
+  </footer>
 
+  <!-- Bootstrap JS Bundle for toggle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
