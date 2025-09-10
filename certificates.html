@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Front-end developer - Yonela Jongola</title>
   <!-- Bootstrap CSS -->
@@ -11,33 +10,31 @@
     rel="stylesheet"
   />
   <!-- Font Awesome for icons -->
-  <script
-    src="https://kit.fontawesome.com/ddc3ee268a.js"
-    crossorigin="anonymous"
-  ></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/ddc3ee268a.js" crossorigin="anonymous"></script>
   <style>
     /* Optional: customize logo size */
     .logo-img {
       height: 50px;
       width: auto;
     }
-    /* Optional: add some spacing for logo */
+    /* Spacing for header container */
     .header-container {
       padding: 0.5rem 1rem;
     }
   </style>
 </head>
 <body>
-  <!-- Header with logo on the left and navbar on the right -->
+  <!-- Header: logo on the left, navbar on the right (collapsible) -->
   <div class="d-flex align-items-center justify-content-between bg-light fixed-top header-container">
-    <!-- Logo -->
+    <!-- Logo on the far left -->
     <a href="/" class="d-flex align-items-center">
-      <img src="your-logo.png" alt="Logo" class="logo-img" />
+      <img src="images/logo.png" alt="Logo" class="logo-img" />
     </a>
-    <!-- Navbar -->
+    <!-- Navbar with collapse -->
     <nav class="navbar navbar-expand-lg p-0">
       <div class="container-fluid p-0">
-        <!-- Toggle button for small screens -->
+        <!-- Hamburger toggle button for small screens -->
         <button
           class="navbar-toggler"
           type="button"
@@ -49,7 +46,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- Collapsible menu aligned to the right -->
+        <!-- Collapsible menu aligned to right -->
         <div class="collapse navbar-collapse" id="navbarRight">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
@@ -73,7 +70,10 @@
     </nav>
   </div>
 
- <div class="text-wrapper" class="Textcolor">
+  <!-- Main content starts below the fixed header -->
+  <div style="margin-top: 80px; padding: 20px;">
+    <!-- Example hero section -->
+   <div class="text-wrapper" class="Textcolor">
     <h1 >Certificates</h1>
     <h3 >Front-end developer from East London, South Africa</h3>
     </div>
@@ -239,5 +239,8 @@
 
           </p>
         </footer>
-      </body>
-    </html>
+
+  <!-- Bootstrap JS Bundle for toggle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
