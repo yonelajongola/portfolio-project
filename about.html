@@ -96,7 +96,7 @@ const { jsPDF } = window.jspdf;
 const doc = new jsPDF("p", "pt", "a4");
 
 html2canvas(document.querySelector("#cv")).then(canvas => {
-const imgData = canvas.toDataURL("image/png");
+const imgData = canvas.toDataURL("image/CV.PDF");
 const imgWidth = 595; // A4 width in pt
 const pageHeight = 842;
 const imgHeight = canvas.height * imgWidth / canvas.width;
@@ -190,5 +190,6 @@ doc.save("CV.pdf");
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
 
 
