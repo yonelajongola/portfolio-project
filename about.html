@@ -86,7 +86,7 @@
                  <
             </p>
             <!-- Add inside <body>, near your CV -->
-<button id="download" class="btn">Download CV</button>
+<button  href="image/CV.pdf" id="download" class="btn">Download CV</button>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
@@ -96,7 +96,7 @@ const { jsPDF } = window.jspdf;
 const doc = new jsPDF("p", "pt", "a4");
 
 html2canvas(document.querySelector("#cv")).then(canvas => {
-const imgData = canvas.toDataURL("image/CV.PDF");
+const imgData = canvas.toDataURL("image/png");
 const imgWidth = 595; // A4 width in pt
 const pageHeight = 842;
 const imgHeight = canvas.height * imgWidth / canvas.width;
@@ -190,6 +190,7 @@ doc.save("CV.pdf");
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
 
 
 
