@@ -1,8 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap');
+
 :root {
   --branding-color: #100720;
   --secondary-color: black;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
+}
+
+/* Header / logo */
+.logo-img {
+  height: 50px;
+  width: auto;
+}
+
+.header-container {
+  padding: 0.5rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 body {
@@ -123,7 +136,7 @@ button::after {
   background: radial-gradient(
     circle farthest-corner at 10% 20%,
     rgba(244, 98, 243, 1) 17%,
-    rgba(2, 244, 277, 1) 100.3%
+    rgba(2, 244, 255, 1) 100.3%
   );
   transition: 0.1s;
   box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.2);
@@ -166,7 +179,7 @@ nav ul {
 }
 
 nav li {
-  display: inline block;
+  display: inline-block;
   list-style: none;
   line-height: 0px;
   margin-left: 15px;
@@ -207,9 +220,9 @@ footer .contact-box {
 footer .contact-box h1 {
   font-size: 2rem;
 }
-footer .contact-box 2 {
+footer .contact-box p {
   margin: 0;
-  font-size: 1.23rem;
+  font-size: 1rem;
 }
 
 footer .email-link {
@@ -251,9 +264,8 @@ footer .social-links a:hover {
   }
 
   h1 {
-    font-size: 40px;
-    line-height: 1;
-    font-size: 1.25rem;
+    font-size: 2rem;
+    line-height: 1.2;
   }
 
   h2 {
@@ -281,110 +293,63 @@ footer .social-links a:hover {
   height: auto;
 }
 
-.text-center {
-  font-size: 10px;
-}
+
 .text-wrapper {
-  padding: 120px;
-}
-.halo {
-  background: pink;
-}
-}
-.pic {
- width: 150px; 
- height: auto; 
- border-radius: 10%;
- box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
- animation: glow 1.5s infinite alternate;   }
-#pic {
-  max-width: 150px; 
-  width: 100%; 
-  margin-top: 80px;
-  border-radius: 50%; 
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
-  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  padding: 60px 20px;
 }
 
+/* Profile photo */
+#pic {
+  max-width: 150px;
+  width: 100%;
+  margin-top: 80px;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
 
 #pic:hover {
-  transform: scale(1.1); 
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px rgba(255, 165, 0, 0.8));
 }
 
+@keyframes glow {
+  0%   { box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); }
+  100% { box-shadow: 0 0 20px rgba(255, 255, 255, 1); }
+}
+
+/* Cards */
 .card-img-top {
   max-height: 200px;
-  object-fit: cover; 
+  object-fit: cover;
   width: 100%;
-  border-radius: 10px;
-}
-.card {
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-} 
-
-#pic::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: radial-gradient(circle, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 60%);
-  border-radius: 50%; 
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-
-#pic:hover::after {
-  opacity: 1; 
-}
-
- #pic {
-  transition: transform 0.3s ease, filter 0.3s ease; 
-}
-
-#pic:hover {
-  transform: scale(1.1); 
-  filter: drop-shadow(0 0 10px rgba(255, 165, 0, 0.8)); 
-}
-  @keyframes glow {
-            0% {
-                box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-            }
-            100% {
-                box-shadow: 0 0 20px rgba(255, 255, 255, 1);
-            }
-        }
-.social-icon:hover {
-  color: #007bff; /* Bootstrap primary color or your preferred color */
-  transition: color 0.3s ease;
+  border-radius: 8px 8px 0 0;
 }
 
 .card {
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
-.card-img-top {
-  max-height: 200px;
-  object-fit: cover;
+
+.social-icon:hover {
+  color: var(--branding-color);
+  transition: color 0.3s ease;
 }
-/* Corrected class name if needed */
+
 .project-description {
   padding: 20px;
 }
 
-/* On small screens, reduce padding and font size */
-@media(max-width: 770px) {
+@media (max-width: 770px) {
   .project-description {
     padding: 10px;
   }
   .card-title {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .card-text {
     font-size: 0.9rem;

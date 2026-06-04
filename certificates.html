@@ -3,26 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Front-end developer - Yonela Jongola</title>
-  <!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
-  <script src="https://kit.fontawesome.com/ddc3ee268a.js" crossorigin="anonymous"></script>
-  <style>
-    /* Optional: customize logo size */
-    .logo-img {
-      height: 50px;
-      width: auto;
-    }
-    /* Spacing for header container */
-    .header-container {
-      padding: 0.5rem 1rem;
-    }
-  </style>
+  <title>Certificates — Yonela Jongola</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- Header: Logo on left, Navbar on right (collapsible) -->
@@ -50,16 +37,16 @@
         <div class="collapse navbar-collapse" id="navbarRight">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/" title="Homepage">Home</a>
+              <a class="nav-link" href="/" title="Homepage">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/contact.html#contact" title="Contact Yonela Jongola">Contact</a>
+              <a class="nav-link" href="/contact.html" title="Contact Yonela Jongola">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/work.html" title="Contact Yonela Jongola">Work</a>
+              <a class="nav-link" href="/work.html" title="Yonela Jongola's Work">Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/certificates.html" title="Contact Yonela Jongola">Certificates</a>
+              <a class="nav-link active" aria-current="page" href="/certificates.html" title="Yonela Jongola's Certificates">Certificates</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/about.html" title="About Yonela Jongola">About</a>
@@ -79,51 +66,88 @@
     </div>
     <div class="container">
       <div class="row justify-content-center">
-        <!-- Example project card -->
+
         <div class="col-md-6 mb-4">
-          <h3 class="mb-2">APISEC Certified Practitioner</h3>h3>
-          <span>Passed the basic course</span>
-          <img src="images/ACPExam.pdf" class="img-fluid rounded-2 w-100 max-height-440" alt="Web Design" />
-        </div>
-        <!-- Repeat for other projects -->
-        <div class="col-md-6 mb-4">
-          <h3 class="mb-2">Microsoft Certified: Azure AI Engineer Associate</h3>
-          <span>Passed the basic course</span>
-          <img src="images/Azure.pdf" class="img-fluid rounded-2 w-100 max-height-440" alt="Web Development" />
-        </div>
-        <div class="col-md-6 mb-4">
-          <h3 class="mb-2">Data, Databases and Mining</h3>
-          <span>Passed the basic course</span>
-          <img src="images/Alison_certificate_data,_databases_and_mining.pdf" class="img-fluid rounded-2 w-100 max-height-440" alt="Data & Mining" />
-        </div>
-        <div class="col-md-6 mb-4">
-          <h3 class="mb-2">Full Stack Development</h3>
-          <span>Passed the basic course</span>
-          <img src="images/Yonela-2-687234D924879-2025-07-12-12-11-37.pdf" class="img-fluid rounded-2 w-100 max-height-440" alt="Full Stack" />
-        </div>
-        <div class="col-md-6 mb-4">
-          <h3 class="mb-2">Ethical Hacking</h3>
-          <span>Passed the basic course</span>
-          <img src="images/_certificate_zjongola-gmail-com_95020cb0-7cc5-4acc-b74a-2e9708c99db5.pdf" class="img-fluid rounded-2 w-100 max-height-440" alt="Ethical Hacking" />
-        </div>
-        <div class="col-md-6 mb-4">
-          <h3 class="mb-2">Junior Cybersecurity Analysis</h3>
-          <span>Passed the basic course</span>
-          <img src="images/101424on20250603_132641_certificate_zjongola-gmail-com_ca7bca12-8ce1-416c-841b-0ec68fba8181.pdf" class="img-fluid rounded-2 w-100 max-height-440" alt="Cybersecurity" />
-        </div>
-        <!-- Additional content -->
-        <div class="row justify-content-center">
-          <div class="col-md-6 mb-4">
-            <h3 class="mb-2">Introduction to Front-end Web Development</h3>
-            <span>Passed the basic course</span>
-            <img src="images/cert.png" class="img-fluid rounded-2 w-100 max-height-400" alt="Front-end Dev" />
-          </div>
-          <div class="col-md-6 mb-4">
-            <h3 class="mb-2">Responsive Web Development</h3>
-            <span>Passed the Responsive Web Development</span>
-            <img src="/react.cert.png" class="img-fluid rounded-2 w-90 max-height-300" alt="Responsive Web" />
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title mb-1">APISEC Certified Practitioner</h3>
+              <p class="text-muted small mb-3">Passed the APISEC basic course</p>
+              <a href="images/ACPExam.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary">View Certificate</a>
+            </div>
           </div>
         </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title mb-1">Microsoft Certified: Azure AI Engineer Associate</h3>
+              <p class="text-muted small mb-3">Passed the basic course</p>
+              <a href="images/Azure.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary">View Certificate</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title mb-1">Data, Databases and Mining</h3>
+              <p class="text-muted small mb-3">Passed the basic course</p>
+              <a href="images/Alison_certificate_data,_databases_and_mining.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary">View Certificate</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title mb-1">Full Stack Development</h3>
+              <p class="text-muted small mb-3">Passed the basic course</p>
+              <a href="images/Yonela-2-687234D924879-2025-07-12-12-11-37.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary">View Certificate</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title mb-1">Ethical Hacking</h3>
+              <p class="text-muted small mb-3">Passed the basic course</p>
+              <a href="images/_certificate_zjongola-gmail-com_95020cb0-7cc5-4acc-b74a-2e9708c99db5.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary">View Certificate</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title mb-1">Junior Cybersecurity Analysis</h3>
+              <p class="text-muted small mb-3">Passed the basic course</p>
+              <a href="images/101424on20250603_132641_certificate_zjongola-gmail-com_ca7bca12-8ce1-416c-841b-0ec68fba8181.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary">View Certificate</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title mb-1">Introduction to Front-end Web Development</h3>
+              <p class="text-muted small mb-3">Passed the basic course</p>
+              <img src="images/cert.png" class="img-fluid rounded mb-3" alt="Front-end Development Certificate" />
+              <a href="images/cert.png" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary">View Certificate</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title mb-1">Responsive Web Development</h3>
+              <p class="text-muted small mb-3">Passed the Responsive Web Development course</p>
+              <a href="images/react.cert.png" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary">View Certificate</a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
@@ -164,7 +188,7 @@
   </footer>
 
   <!-- Bootstrap JS for toggle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
