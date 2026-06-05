@@ -3,221 +3,268 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Work — Yonela Jongola</title>
+  <meta
+    name="description"
+    content="Portfolio projects by Yonela Jongola, including AI cloud tools, restaurant management dashboards, risk reporting apps, and earlier front-end projects."
+  />
+  <title>Work | Yonela Jongola</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header: logo on the left, navbar on the right (collapsible) -->
-  <div class="d-flex align-items-center justify-content-between bg-light fixed-top header-container">
-    <!-- Logo on the far left -->
-    <a href="/" class="d-flex align-items-center">
-      <img src="images/logo.png" alt="Logo" class="logo-img" />
-    </a>
-    <!-- Navbar with collapse -->
-    <nav class="navbar navbar-expand-lg p-0">
-      <div class="container-fluid p-0">
-        <!-- Hamburger toggle button for small screens -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarRight"
-          aria-controls="navbarRight"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+  <header class="site-header bg-light fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html#home" class="d-flex align-items-center text-decoration-none" aria-label="Yonela Jongola home">
+        <img src="images/logo.png" alt="Yonela Jongola logo" class="logo-img" />
+      </a>
+
+      <nav class="navbar navbar-expand-lg p-0" aria-label="Primary navigation">
+        <button class="navbar-toggler" type="button" aria-controls="primaryNavigation" aria-expanded="false" aria-label="Toggle navigation" data-menu-toggle>
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- Collapsible menu aligned to right -->
-        <div class="collapse navbar-collapse" id="navbarRight">
+
+        <div class="nav-menu" id="primaryNavigation" data-nav-menu>
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="/" title="Homepage">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contact.html" title="Contact Yonela Jongola">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/work.html" title="Yonela Jongola's Work">Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/certificates.html" title="Yonela Jongola's Certificates">Certificates</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/about.html" title="About Yonela Jongola">About</a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="index.html#home" data-nav-link>Home</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="work.html" data-nav-link>Work</a></li>
+            <li class="nav-item"><a class="nav-link" href="certificates.html" data-nav-link>Certificates</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html" data-nav-link>About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html" data-nav-link>Contact</a></li>
           </ul>
         </div>
-      </div>
-    </nav>
-  </div>
+      </nav>
+    </div>
+  </header>
 
-  <!-- Page header -->
-  <div style="margin-top: 80px; padding: 20px;">
-    <div class="text-wrapper text-center mb-4">
-      <h1>My Work</h1>
-      <p class="text-muted">A selection of projects I've built</p>
-    </div>
-   
-     <div class="container my-4">
-  <!-- First Row of 4 cards -->
-  <div class="row g-3 mb-4">
-    <!-- Card 1 -->
-    <div class="col-md-3">
-      <div class="card h-100">
-        <img src="images/project2.png" class="card-img-top" alt="AI Chef project preview" />
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">AI Chef</h5>
-          <p class="card-text flex-grow-1">
-            Enter any ingredient or dish name and get instant AI-generated recipe ideas. A JavaScript-powered recipe discovery tool that connects to an AI API to suggest creative meal options based on your input.
-          </p>
-          <a href="https://taupe-paprenjak-c7f60c.netlify.app/" class="btn btn-outline-primary mt-auto" target="_blank">Launch Project</a>
+  <main>
+    <section class="content-section">
+      <div class="container">
+        <div class="section-heading text-center mb-5">
+          <p class="section-eyebrow">Selected Work</p>
+          <h1>Project Showcase</h1>
+          <p class="text-muted">Professional projects focused on learner support, dashboards, business operations, and risk reporting.</p>
         </div>
-      </div>
-    </div>
-    <!-- Card 2 -->
-    <div class="col-md-3">
-      <div class="card h-100">
-        <img src="images/project5.png" class="card-img-top" alt="E-Commerce Website preview" />
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">Billy Bistro</h5>
-          <p class="card-text flex-grow-1">
-            A fully responsive restaurant website for a fine dining establishment in East London. Features a styled menu (breakfast, appetizers, mains), an online table reservation form, upcoming food events, and a newsletter signup — all with smooth CSS animations.
-          </p>
-          <a href="https://idyllic-paprenjak-7120af.netlify.app/#" class="btn btn-outline-primary mt-auto" target="_blank">Launch Project</a>
-        </div>
-      </div>
-    </div>
-    <!-- Card 3 -->
-    <div class="col-md-3">
-      <div class="card h-100">
-        <img src="images/project6.png" class="card-img-top" alt="Blog platform preview" />
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">YOYI Creative Agency</h5>
-          <p class="card-text flex-grow-1">
-            A multi-page creative agency site promoting services including web &amp; mobile app development, responsive design, brand strategy, and custom eCommerce. Includes a project portfolio, services overview, and contact page.
-          </p>
-          <a href="https://beamish-belekoy-408a11.netlify.app/" class="btn btn-outline-primary mt-auto" target="_blank">Launch Project</a>
-        </div>
-      </div>
-    </div>
-    <!-- Card 4 -->
-    <div class="col-md-3">
-      <div class="card h-100">
-        <img src="images/project4.png" class="card-img-top" alt="Digital Clock App preview" />
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">Live World Clock</h5>
-          <p class="card-text flex-grow-1">
-            A real-time world clock that shows the current time across multiple global cities simultaneously — your local time, Japan, New York, and London — with a city selector to compare timezones on the fly.
-          </p>
-          <a href="https://capable-begonia-76236d.netlify.app/" class="btn btn-outline-primary mt-auto" target="_blank">Launch Project</a>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Second Row of 4 cards -->
-  <div class="row g-3">
-    <!-- Card 5 -->
-    <div class="col-md-3">
-      <div class="card h-100">
-        <img src="images/project1.png" class="card-img-top" alt="Website project preview" />
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">Responsive Landing Page</h5>
-          <p class="card-text flex-grow-1">
-            A clean, fully responsive multi-section landing page built as a CSS &amp; layout practice project. Demonstrates mastery of Flexbox, Grid, smooth scroll, and mobile-first responsive breakpoints.
-          </p>
-          <a href="https://beamish-belekoy-408a11.netlify.app/" class="btn btn-outline-primary mt-auto" target="_blank">Launch Project</a>
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <article class="card project-card h-100">
+              <div class="card-body d-flex flex-column">
+                <span class="project-label">AI + Cloud</span>
+                <h3 class="card-title">Student Support Insights Tool</h3>
+                <p><strong>Problem solved:</strong> Programme staff need a practical way to understand student support needs from survey data.</p>
+                <p><strong>Solution summary:</strong> AI-enabled web application that collects, analyses, and interprets survey data using visual dashboards and practical recommendations.</p>
+                <div class="tech-stack mt-auto">
+                  <span>React</span>
+                  <span>C#</span>
+                  <span>ASP.NET Core</span>
+                  <span>Azure</span>
+                  <span>CSV Data</span>
+                  <span>Dashboard Analytics</span>
+                </div>
+                <div class="d-flex flex-wrap gap-2 mt-4">
+                  <a class="btn btn-outline-primary" href="https://ssiyj37613.z1.web.core.windows.net/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                  <a class="btn btn-outline-primary" href="https://github.com/yonelajongola/student-support-insights-tool" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4">
+            <article class="card project-card h-100">
+              <div class="card-body d-flex flex-column">
+                <span class="project-label">Dashboard System</span>
+                <h3 class="card-title">FoodieBar Restaurant Management System</h3>
+                <p><strong>Problem solved:</strong> Restaurants need one secure platform to manage orders, staff activity, inventory, menus, deliveries, and business performance instead of using disconnected tools.</p>
+                <p><strong>Solution summary:</strong> A full restaurant operating dashboard with role-based access, real-time order flow, staff performance insights, inventory tracking, menu management, reporting, and AI-ready business analytics.</p>
+                <div class="tech-stack mt-auto">
+                  <span>React</span>
+                  <span>Tailwind CSS</span>
+                  <span>Node.js / C#</span>
+                  <span>REST API</span>
+                  <span>Dashboard Analytics</span>
+                  <span>Role-Based Access Control</span>
+                  <span>MongoDB / Azure SQL</span>
+                  <span>Azure App Service</span>
+                  <span>Azure Static Web Apps</span>
+                  <span>API Security</span>
+                  <span>AI-Ready Architecture</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4">
+            <article class="card project-card h-100">
+              <div class="card-body d-flex flex-column">
+                <span class="project-label">Risk + Reporting</span>
+                <h3 class="card-title">Business Risk Assessment App</h3>
+                <p><strong>Problem solved:</strong> Small teams need a structured way to identify, assess, and report operational and IT-related risks.</p>
+                <p><strong>Solution summary:</strong> Business-focused application for capturing risks, applying risk scoring, and presenting results through a reporting dashboard.</p>
+                <div class="tech-stack mt-auto">
+                  <span>C#</span>
+                  <span>ASP.NET Core</span>
+                  <span>SQL</span>
+                  <span>Risk Scoring</span>
+                  <span>Reporting Dashboard</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="section-heading text-center mt-5 mb-4">
+          <p class="section-eyebrow">Earlier Projects</p>
+          <h2>Additional Work</h2>
+          <p class="text-muted">Earlier front-end projects showing responsive UI, API integration, React practice, and polished website builds.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-4">
+            <article class="card project-card h-100">
+              <img src="images/project2.png" class="project-image" alt="AI Recipe Generator project preview" loading="lazy" />
+              <div class="card-body d-flex flex-column">
+                <span class="project-label">AI Tool</span>
+                <h3 class="card-title">AI Recipe Generator</h3>
+                <p><strong>Problem solved:</strong> Helps users quickly find recipe ideas based on ingredients or dish names.</p>
+                <p><strong>Solution summary:</strong> JavaScript application that connects to an AI API and returns practical meal ideas from user input.</p>
+                <div class="tech-stack mt-auto">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>AI API</span>
+                </div>
+                <div class="d-flex flex-wrap gap-2 mt-4">
+                  <a class="btn btn-outline-primary" href="https://taupe-paprenjak-c7f60c.netlify.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <article class="card project-card h-100">
+              <img src="reactWeather.png" class="project-image" alt="Weather App project preview" loading="lazy" />
+              <div class="card-body d-flex flex-column">
+                <span class="project-label">API App</span>
+                <h3 class="card-title">Weather App</h3>
+                <p><strong>Problem solved:</strong> Gives users a simple way to check current weather conditions for any city.</p>
+                <p><strong>Solution summary:</strong> React weather dashboard using API data for temperature, humidity, wind speed, and forecasts.</p>
+                <div class="tech-stack mt-auto">
+                  <span>React</span>
+                  <span>API</span>
+                  <span>JavaScript</span>
+                  <span>Responsive UI</span>
+                </div>
+                <div class="d-flex flex-wrap gap-2 mt-4">
+                  <a class="btn btn-outline-primary" href="https://jazzy-chaja-32d968.netlify.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <article class="card project-card h-100">
+              <img src="images/project5.png" class="project-image" alt="Billy Bistro restaurant website preview" loading="lazy" />
+              <div class="card-body d-flex flex-column">
+                <span class="project-label">Business Website</span>
+                <h3 class="card-title">Billy Bistro</h3>
+                <p><strong>Problem solved:</strong> Helps a restaurant present its brand, menu, events, and booking flow clearly online.</p>
+                <p><strong>Solution summary:</strong> Responsive restaurant website with menu sections, reservation calls-to-action, event content, and newsletter signup.</p>
+                <div class="tech-stack mt-auto">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>Responsive Design</span>
+                </div>
+                <div class="d-flex flex-wrap gap-2 mt-4">
+                  <a class="btn btn-outline-primary" href="https://idyllic-paprenjak-7120af.netlify.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <article class="card project-card h-100">
+              <img src="images/project4.png" class="project-image" alt="Live World Clock project preview" loading="lazy" />
+              <div class="card-body d-flex flex-column">
+                <span class="project-label">Utility App</span>
+                <h3 class="card-title">Live World Clock</h3>
+                <p><strong>Problem solved:</strong> Makes it easier to compare time across different global cities.</p>
+                <p><strong>Solution summary:</strong> Real-time world clock with city selection and timezone display for quick international time checks.</p>
+                <div class="tech-stack mt-auto">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>Timezones</span>
+                </div>
+                <div class="d-flex flex-wrap gap-2 mt-4">
+                  <a class="btn btn-outline-primary" href="https://capable-begonia-76236d.netlify.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <article class="card project-card h-100">
+              <img src="images/127.0.0.1_5500_.png" class="project-image" alt="YOYI Creative Agency website preview" loading="lazy" />
+              <div class="card-body d-flex flex-column">
+                <span class="project-label">Agency Site</span>
+                <h3 class="card-title">YOYI Creative Agency</h3>
+                <p><strong>Problem solved:</strong> Gives a creative agency a clear online presence for services, portfolio, and contact conversion.</p>
+                <p><strong>Solution summary:</strong> Multi-page agency website for web, mobile, branding, and eCommerce service offerings.</p>
+                <div class="tech-stack mt-auto">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>Responsive Layout</span>
+                </div>
+                <div class="d-flex flex-wrap gap-2 mt-4">
+                  <a class="btn btn-outline-primary" href="https://beamish-belekoy-408a11.netlify.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <article class="card project-card h-100">
+              <img src="images/codespaces-react-sepia.vercel.app_.png" class="project-image" alt="Fooodie Bar food discovery app preview" loading="lazy" />
+              <div class="card-body d-flex flex-column">
+                <span class="project-label">React App</span>
+                <h3 class="card-title">Fooodie Bar Food Discovery App</h3>
+                <p><strong>Problem solved:</strong> Helps users browse meals by category and discover featured food items in a visual interface.</p>
+                <p><strong>Solution summary:</strong> React app with food categories, featured dishes, and a carousel-style browsing experience.</p>
+                <div class="tech-stack mt-auto">
+                  <span>React</span>
+                  <span>API</span>
+                  <span>Carousel UI</span>
+                  <span>Responsive Design</span>
+                </div>
+                <div class="d-flex flex-wrap gap-2 mt-4">
+                  <a class="btn btn-outline-primary" href="https://codespaces-react-sepia.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Card 6 -->
-    <div class="col-md-3">
-      <div class="card h-100">
-        <img src="images/project3.png" class="card-img-top" alt="Weather App preview" />
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">Weather App</h5>
-          <p class="card-text flex-grow-1">
-            A React weather dashboard powered by the OpenWeather API. Search any city to see real-time temperature, humidity, wind speed, and weather conditions. Supports toggling between &deg;C and &deg;F.
-          </p>
-          <a href="https://jazzy-chaja-32d968.netlify.app/" class="btn btn-outline-primary mt-auto" target="_blank">Launch Project</a>
-        </div>
-      </div>
-    </div>
-    <!-- Card 7 -->
-    <div class="col-md-3">
-      <div class="card h-100">
-        <img src="images/project7.png" class="card-img-top" alt="Task Manager preview" />
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">Task Manager</h5>
-          <p class="card-text flex-grow-1">
-            A client-side productivity app built with React. Add, complete, and delete tasks with state persisted via localStorage — your list survives page refreshes without any backend.
-          </p>
-          <a href="#" class="btn btn-outline-primary mt-auto" target="_blank">Launch Project</a>
-        </div>
-      </div>
-    </div>
-    <!-- Card 8 -->
-    <div class="col-md-3">
-      <div class="card h-100">
-        <img src="images/project8.png" class="card-img-top" alt="Photo Gallery preview" />
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">Fooodie Bar</h5>
-          <p class="card-text flex-grow-1">
-            An interactive food discovery app built with React. Browse dishes by category, explore featured meals pulled from a food API, and enjoy a hero carousel of highlighted items — all with a clean, responsive UI.
-          </p>
-          <a href="https://codespaces-react-sepia.vercel.app/" class="btn btn-outline-primary mt-auto" target="_blank">Launch Project</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-  <!-- Footer -->
-  <footer class="mt-5 bg-light pt-4 pb-2">
+    </section>
+  </main>
+
+  <footer class="site-footer bg-light">
     <div class="container text-center">
-      <!-- Contact box -->
-      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-3">
-        <div>
-          <h3>Work Inquiry</h3>
-          <p class="text-muted mb-0">Let's work together</p>
-        </div>
-        <a class="btn btn-primary mt-3 mt-md-0" href="/contact.html" title="Contact Yonela">Contact me</a>
+      <a href="mailto:zjongola@gmail.com" class="email-link">zjongola@gmail.com</a>
+      <div class="social-links d-flex justify-content-center my-4">
+        <a href="https://github.com/yonelajongola" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/yonela-jongola" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://twitter.com/yonelajongola" target="_blank" rel="noopener noreferrer" aria-label="Twitter profile"><i class="fab fa-twitter"></i></a>
       </div>
-      <!-- Email -->
-      <div class="d-flex justify-content-center mb-3">
-        <a href="mailto:zjongola@gmail.com" class="text-decoration-none" style="font-weight: 500;">zjongola@gmail.com</a>
-      </div>
-      <!-- Social links -->
-      <div class="d-flex justify-content-center mb-3">
-        <a href="https://github.com/yonelajongola" target="_blank" rel="noopener noreferrer" class="mx-3 text-dark" aria-label="GitHub">
-          <i class="fab fa-github fa-2x"></i>
-        </a>
-        <a href="https://www.instagram.com/yonela_jongola" target="_blank" rel="noopener noreferrer" class="mx-3 text-dark" aria-label="Instagram">
-          <i class="fab fa-instagram fa-2x"></i>
-        </a>
-        <a href="https://twitter.com/yonelajongola" target="_blank" rel="noopener noreferrer" class="mx-3 text-dark" aria-label="Twitter">
-          <i class="fab fa-twitter fa-2x"></i>
-        </a>
-      </div>
-      <!-- Credit -->
-      <p class="small text-muted">
-        This website was coded by YONELA JONGOLA, and is
-        <a href="https://github.com/yonelajongola/portfolio-project" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-          open-sourced
-        </a>
-      </p>
+      <p class="small text-muted mb-0">Yonela Jongola | AI Cloud Developer</p>
     </div>
   </footer>
 
-  <!-- Bootstrap JS Bundle for toggle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
-
-
-

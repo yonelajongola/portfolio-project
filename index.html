@@ -3,223 +3,455 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yonela Jongola — Front-end Developer</title>
+  <meta
+    name="description"
+    content="Yonela Jongola is an AI Cloud Developer and Full-Stack Developer in Cape Town, South Africa, building React, C#, Azure, AI, dashboard, API, and security-focused solutions."
+  />
+  <title>Yonela Jongola | AI Cloud Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header: logo on the left, navbar on the right (collapsible) -->
-  <div class="d-flex align-items-center justify-content-between bg-light fixed-top header-container">
-    <!-- Logo on the far left -->
-    <a href="/" class="d-flex align-items-center">
-      <img src="images/logo.png" alt="Logo" class="logo-img" />
-    </a>
-    <!-- Navbar with collapse -->
-    <nav class="navbar navbar-expand-lg p-0">
-      <div class="container-fluid p-0">
-        <!-- Hamburger toggle button for small screens -->
+  <header class="site-header bg-light fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="#home" class="d-flex align-items-center text-decoration-none" aria-label="Yonela Jongola home">
+        <img src="images/logo.png" alt="Yonela Jongola logo" class="logo-img" />
+      </a>
+
+      <nav class="navbar navbar-expand-lg p-0" aria-label="Primary navigation">
         <button
           class="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarRight"
-          aria-controls="navbarRight"
+          aria-controls="primaryNavigation"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          data-menu-toggle
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- Collapsible menu aligned to right -->
-        <div class="collapse navbar-collapse" id="navbarRight">
+
+        <div class="nav-menu" id="primaryNavigation" data-nav-menu>
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/" title="Homepage">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contact.html#contact" title="Contact Yonela Jongola">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/work.html" title="Yonela Jongola's Work">Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/certificates.html" title="Yonela Jongola's Certificates">Certificates</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/about.html" title="About Yonela Jongola">About</a>
-            </li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html#home" data-nav-link>Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="work.html" data-nav-link>Work</a></li>
+            <li class="nav-item"><a class="nav-link" href="certificates.html" data-nav-link>Certificates</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html" data-nav-link>About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html" data-nav-link>Contact</a></li>
           </ul>
         </div>
-      </div>
-    </nav>
-  </div>
-
-
-  <!-- Hero Section -->
-  <div class="hero text-center py-5">
-    <p>Hello, I'm</p>
-    <h1>Yonela Jongola</h1>
-    <h2 class="mb-5">Front-end developer based in Cape Town, South Africa</h2>
-    <a class='btn btn-branding' href='/contact.html' title='Contact me'>Contact me</a>
-  </div>
-
-  <p class="text-center m-5">Check out some of my featured projects below</p>
-
-  <!-- Projects Section -->
-  <div class="container mb-5">
-    <div class="row g-4">
-      <!-- Project Card 1 -->
-      <div class="col-lg-3 col-md-6">
-        <div class="card h-100">
-          <img src="images/project2.png" class="card-img-top" alt="AI Chef preview" />
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">AI Chef</h5>
-            <span class="card-text flex-grow-1 text-muted">
-              Enter any ingredient and get AI-generated recipe ideas instantly. Built with HTML, CSS, and JavaScript.
-            </span>
-            <a href="/work.html" class="btn btn-outline-primary mt-auto">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <!-- Project Card 2 -->
-      <div class="col-lg-3 col-md-6">
-        <div class="card h-100">
-          <img src="images/project3.png" class="card-img-top" alt="Weather App preview" />
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Weather App</h5>
-            <span class="card-text flex-grow-1 text-muted">
-              Search any city for live temperature, humidity, and wind data via the OpenWeather API. Built with React.
-            </span>
-            <a href="/work.html" class="btn btn-outline-primary mt-auto">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <!-- Project Card 3 -->
-      <div class="col-lg-3 col-md-6">
-        <div class="card h-100">
-          <img src="images/project5.png" class="card-img-top" alt="Billy Bistro restaurant site preview" />
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Billy Bistro</h5>
-            <span class="card-text flex-grow-1 text-muted">
-              A fine dining restaurant website with a full menu, online table reservations, and upcoming events.
-            </span>
-            <a href="/work.html" class="btn btn-outline-primary mt-auto">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <!-- Project Card 4 -->
-      <div class="col-lg-3 col-md-6">
-        <div class="card h-100">
-          <img src="images/project4.png" class="card-img-top" alt="Live World Clock preview" />
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Live World Clock</h5>
-            <span class="card-text flex-grow-1 text-muted">
-              Displays real-time clocks for multiple global cities simultaneously with a city selector.
-            </span>
-            <a href="/work.html" class="btn btn-outline-primary mt-auto">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <!-- Project Card 5 -->
-      <div class="col-lg-3 col-md-6">
-        <div class="card h-100">
-          <img src="images/project6.png" class="card-img-top" alt="YOYI Agency site preview" />
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">YOYI Creative Agency</h5>
-            <span class="card-text flex-grow-1 text-muted">
-              A multi-page agency website showcasing web, mobile, branding, and eCommerce services.
-            </span>
-            <a href="/work.html" class="btn btn-outline-primary mt-auto">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <!-- Project Card 6 -->
-      <div class="col-lg-3 col-md-6">
-        <div class="card h-100">
-          <img src="images/project1.png" class="card-img-top" alt="Fooodie Bar app preview" />
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Fooodie Bar</h5>
-            <span class="card-text flex-grow-1 text-muted">
-              A React food discovery app with category browsing, a featured dishes feed, and a hero image carousel.
-            </span>
-            <a href="/work.html" class="btn btn-outline-primary mt-auto">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <!-- Project Card 7 -->
-      <div class="col-lg-3 col-md-6">
-        <div class="card h-100">
-          <img src="images/project7.png" class="card-img-top" alt="Task Manager preview" />
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Task Manager</h5>
-            <span class="card-text flex-grow-1 text-muted">
-              A React productivity app to add, complete, and delete tasks, persisted via localStorage.
-            </span>
-            <a href="/work.html" class="btn btn-outline-primary mt-auto">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <!-- Project Card 8 -->
-      <div class="col-lg-3 col-md-6">
-        <div class="card h-100">
-          <img src="images/project8.png" class="card-img-top" alt="Portfolio Website preview" />
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Portfolio Website</h5>
-            <span class="card-text flex-grow-1 text-muted">
-              This portfolio — a responsive multi-page site showcasing my projects, certificates, and contact info.
-            </span>
-            <a href="/work.html" class="btn btn-outline-primary mt-auto">Learn More</a>
-          </div>
-        </div>
-      </div>
+      </nav>
     </div>
-  </div>
+  </header>
 
-  <!-- Footer Section -->
-<footer class="mt-5 bg-light pt-4 pb-2">
-  <div class="container text-center">
-    <!-- Contact Box -->
-    <div class="contact-box justify-content-between mb-3 d-flex flex-column flex-md-row align-items-center">
-      <div>
-        <h3>Work Inquiry</h3>
-        <p class="text-muted mb-0">Let's work together</p>
+  <main>
+    <section class="hero section-anchor" id="home" data-section>
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7 text-center text-lg-start">
+            <p class="hero-kicker">Hello, I'm</p>
+            <h1>Yonela Jongola</h1>
+            <h2>AI Cloud Developer | Full-Stack Developer | Azure &amp; Security-Focused Solutions</h2>
+            <p class="hero-intro">
+              I build practical web applications using React, C#, Azure, and AI tools to solve real business and learner-support problems. My work focuses on clean user interfaces, useful dashboards, secure APIs, and cloud deployment.
+            </p>
+            <div class="d-flex flex-column flex-sm-row flex-wrap gap-3 justify-content-center justify-content-lg-start mt-4">
+              <a class="btn btn-branding" href="work.html">View Work</a>
+              <a class="btn btn-branding-outline light-outline" href="image/CV.pdf" download>Download CV</a>
+              <a class="btn btn-branding-outline light-outline" href="https://github.com/yonelajongola" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a class="btn btn-branding" href="contact.html">Contact Me</a>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="hero-profile-card mx-auto">
+              <img src="images/IMG_9960.jpeg" alt="Portrait of Yonela Jongola" class="profile-photo" />
+              <div class="profile-summary">
+                <span>Cape Town, South Africa</span>
+                <h3>Building useful cloud, AI, dashboard, and secure API solutions.</h3>
+              </div>
+              <div class="focus-list">
+                <p><i class="fa-solid fa-cloud"></i> Azure deployment</p>
+                <p><i class="fa-solid fa-code"></i> React + C# applications</p>
+                <p><i class="fa-solid fa-shield-halved"></i> Security-focused APIs</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <a class="btn btn-primary mt-3 mt-md-0" href="/contact.html" title="Contact Yonela">Contact me</a>
-    </div>
+    </section>
 
-    <!-- Email Link -->
-    <div class="d-flex justify-content-center mb-3">
-      <a href="mailto:zjongola@gmail.com" class="email-link text-decoration-none" title="Email Yonela" style="font-weight: 500;">
-        zjongola@gmail.com
-      </a>
-    </div>
+    <section class="content-section section-anchor" id="work" data-section>
+      <div class="container">
+        <div class="section-heading text-center mb-5">
+          <p class="section-eyebrow">Selected Work</p>
+          <h2>Project Showcase</h2>
+          <p class="text-muted">Professional projects focused on learner support, dashboards, business operations, and risk reporting.</p>
+        </div>
 
-    <!-- Social Links -->
-    <div class="social-links d-flex justify-content-center mb-3">
-      <a href="https://github.com/yonelajongola" target="_blank" rel="noopener noreferrer" class="mx-3 text-dark social-icon" title="GitHub Profile" aria-label="GitHub">
-        <i class="fab fa-github fa-2x"></i>
-      </a>
-      <a href="https://www.instagram.com/yonela_jongola" target="_blank" rel="noopener noreferrer" class="mx-3 text-dark social-icon" title="Instagram Profile" aria-label="Instagram">
-        <i class="fab fa-instagram fa-2x"></i>
-      </a>
-      <a href="https://twitter.com/yonelajongola" target="_blank" rel="noopener noreferrer" class="mx-3 text-dark social-icon" title="Twitter Profile" aria-label="Twitter">
-        <i class="fab fa-twitter fa-2x"></i>
-      </a>
-    </div>
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <article class="card project-card h-100">
+              <div class="card-body d-flex flex-column">
+                <span class="project-label">AI + Cloud</span>
+                <h3 class="card-title">Student Support Insights Tool</h3>
+                <p><strong>Problem solved:</strong> Programme staff need a practical way to understand student support needs from survey data.</p>
+                <p><strong>Solution summary:</strong> AI-enabled web application that collects, analyses, and interprets survey data using visual dashboards and practical recommendations.</p>
+                <div class="tech-stack mt-auto">
+                  <span>React</span>
+                  <span>C#</span>
+                  <span>ASP.NET Core</span>
+                  <span>Azure</span>
+                  <span>CSV Data</span>
+                  <span>Dashboard Analytics</span>
+                </div>
+                <div class="d-flex flex-wrap gap-2 mt-4">
+                  <a class="btn btn-outline-primary" href="https://ssiyj37613.z1.web.core.windows.net/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                  <a class="btn btn-outline-primary" href="https://github.com/yonelajongola/student-support-insights-tool" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
 
-    <!-- Credit Text -->
-    <span class="text-center mt-3 small text-muted">
-      This website was coded by YONELA JONGOLA, and is
-      <a href="https://github.com/yonelajongola/portfolio-project" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-        open-sourced
-      </a>
-    </span>
-  </div>
-</footer>
-<!-- Bootstrap JS for toggle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+          <div class="col-lg-4">
+            <article class="card project-card h-100">
+              <div class="card-body d-flex flex-column">
+                <span class="project-label">Dashboard System</span>
+                <h3 class="card-title">FoodieBar Restaurant Management System</h3>
+                <p><strong>Problem solved:</strong> Restaurants need one secure platform to manage orders, staff activity, inventory, menus, deliveries, and business performance instead of using disconnected tools.</p>
+                <p><strong>Solution summary:</strong> A full restaurant operating dashboard with role-based access, real-time order flow, staff performance insights, inventory tracking, menu management, reporting, and AI-ready business analytics.</p>
+                <div class="tech-stack mt-auto">
+                  <span>React</span>
+                  <span>Tailwind CSS</span>
+                  <span>Node.js / C#</span>
+                  <span>REST API</span>
+                  <span>Dashboard Analytics</span>
+                  <span>Role-Based Access Control</span>
+                  <span>MongoDB / Azure SQL</span>
+                  <span>Azure App Service</span>
+                  <span>Azure Static Web Apps</span>
+                  <span>API Security</span>
+                  <span>AI-Ready Architecture</span>
+                  <span>Azure</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4">
+            <article class="card project-card h-100">
+              <div class="card-body d-flex flex-column">
+                <span class="project-label">Risk + Reporting</span>
+                <h3 class="card-title">Business Risk Assessment App</h3>
+                <p><strong>Problem solved:</strong> Small teams need a structured way to identify, assess, and report operational and IT-related risks.</p>
+                <p><strong>Solution summary:</strong> Business-focused application for capturing risks, applying risk scoring, and presenting results through a reporting dashboard.</p>
+                <div class="tech-stack mt-auto">
+                  <span>C#</span>
+                  <span>ASP.NET Core</span>
+                  <span>SQL</span>
+                  <span>Risk Scoring</span>
+                  <span>Reporting Dashboard</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="section-heading text-center mt-5 mb-4">
+          <p class="section-eyebrow">Earlier Projects</p>
+          <h2 class="h1">Additional Work</h2>
+          <p class="text-muted">Earlier front-end projects showing responsive UI, API integration, React practice, and polished website builds.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-4">
+            <article class="card project-card h-100">
+              <img src="images/project2.png" class="project-image" alt="AI Recipe Generator project preview" loading="lazy" />
+              <div class="card-body d-flex flex-column">
+                <span class="project-label">AI Tool</span>
+                <h3 class="card-title">AI Recipe Generator</h3>
+                <p><strong>Problem solved:</strong> Helps users quickly find recipe ideas based on ingredients or dish names.</p>
+                <p><strong>Solution summary:</strong> JavaScript application that connects to an AI API and returns practical meal ideas from user input.</p>
+                <div class="tech-stack mt-auto">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>AI API</span>
+                </div>
+                <div class="d-flex flex-wrap gap-2 mt-4">
+                  <a class="btn btn-outline-primary" href="https://taupe-paprenjak-c7f60c.netlify.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <article class="card project-card h-100">
+              <img src="reactWeather.png" class="project-image" alt="Weather App project preview" loading="lazy" />
+              <div class="card-body d-flex flex-column">
+                <span class="project-label">API App</span>
+                <h3 class="card-title">Weather App</h3>
+                <p><strong>Problem solved:</strong> Gives users a simple way to check current weather conditions for any city.</p>
+                <p><strong>Solution summary:</strong> React weather dashboard using API data for temperature, humidity, wind speed, and forecasts.</p>
+                <div class="tech-stack mt-auto">
+                  <span>React</span>
+                  <span>API</span>
+                  <span>JavaScript</span>
+                  <span>Responsive UI</span>
+                </div>
+                <div class="d-flex flex-wrap gap-2 mt-4">
+                  <a class="btn btn-outline-primary" href="https://jazzy-chaja-32d968.netlify.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <article class="card project-card h-100">
+              <img src="images/project5.png" class="project-image" alt="Billy Bistro restaurant website preview" loading="lazy" />
+              <div class="card-body d-flex flex-column">
+                <span class="project-label">Business Website</span>
+                <h3 class="card-title">Billy Bistro</h3>
+                <p><strong>Problem solved:</strong> Helps a restaurant present its brand, menu, events, and booking flow clearly online.</p>
+                <p><strong>Solution summary:</strong> Responsive restaurant website with menu sections, reservation calls-to-action, event content, and newsletter signup.</p>
+                <div class="tech-stack mt-auto">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>Responsive Design</span>
+                </div>
+                <div class="d-flex flex-wrap gap-2 mt-4">
+                  <a class="btn btn-outline-primary" href="https://idyllic-paprenjak-7120af.netlify.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <article class="card project-card h-100">
+              <img src="images/project4.png" class="project-image" alt="Live World Clock project preview" loading="lazy" />
+              <div class="card-body d-flex flex-column">
+                <span class="project-label">Utility App</span>
+                <h3 class="card-title">Live World Clock</h3>
+                <p><strong>Problem solved:</strong> Makes it easier to compare time across different global cities.</p>
+                <p><strong>Solution summary:</strong> Real-time world clock with city selection and timezone display for quick international time checks.</p>
+                <div class="tech-stack mt-auto">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>Timezones</span>
+                </div>
+                <div class="d-flex flex-wrap gap-2 mt-4">
+                  <a class="btn btn-outline-primary" href="https://capable-begonia-76236d.netlify.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <article class="card project-card h-100">
+              <img src="images/127.0.0.1_5500_.png" class="project-image" alt="YOYI Creative Agency website preview" loading="lazy" />
+              <div class="card-body d-flex flex-column">
+                <span class="project-label">Agency Site</span>
+                <h3 class="card-title">YOYI Creative Agency</h3>
+                <p><strong>Problem solved:</strong> Gives a creative agency a clear online presence for services, portfolio, and contact conversion.</p>
+                <p><strong>Solution summary:</strong> Multi-page agency website for web, mobile, branding, and eCommerce service offerings.</p>
+                <div class="tech-stack mt-auto">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>Responsive Layout</span>
+                </div>
+                <div class="d-flex flex-wrap gap-2 mt-4">
+                  <a class="btn btn-outline-primary" href="https://beamish-belekoy-408a11.netlify.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <article class="card project-card h-100">
+              <img src="images/codespaces-react-sepia.vercel.app_.png" class="project-image" alt="Fooodie Bar food discovery app preview" loading="lazy" />
+              <div class="card-body d-flex flex-column">
+                <span class="project-label">React App</span>
+                <h3 class="card-title">Fooodie Bar Food Discovery App</h3>
+                <p><strong>Problem solved:</strong> Helps users browse meals by category and discover featured food items in a visual interface.</p>
+                <p><strong>Solution summary:</strong> React app with food categories, featured dishes, and a carousel-style browsing experience.</p>
+                <div class="tech-stack mt-auto">
+                  <span>React</span>
+                  <span>API</span>
+                  <span>Carousel UI</span>
+                  <span>Responsive Design</span>
+                </div>
+                <div class="d-flex flex-wrap gap-2 mt-4">
+                  <a class="btn btn-outline-primary" href="https://codespaces-react-sepia.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section bg-soft section-anchor" id="certificates" data-section>
+      <div class="container">
+        <div class="section-heading text-center mb-5">
+          <p class="section-eyebrow">Credentials</p>
+          <h2>Certificates</h2>
+          <p class="text-muted">A focused learning path across Azure, AI development, API security, cybersecurity, and digital professional skills.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-4">
+            <article class="certificate-card h-100">
+              <span>Microsoft</span>
+              <h3>Microsoft Azure AI Engineer Associate - AI-102</h3>
+              <p>Skill area: Azure AI solutions</p>
+              <strong>Completed</strong>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <article class="certificate-card h-100">
+              <span>Microsoft</span>
+              <h3>Microsoft Azure Developer Associate - AZ-204</h3>
+              <p>Skill area: Azure development</p>
+              <strong>Completed</strong>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <article class="certificate-card h-100">
+              <span>APIsec University</span>
+              <h3>APIsec Certified Practitioner</h3>
+              <p>Skill area: API security</p>
+              <strong>Completed</strong>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <article class="certificate-card h-100">
+              <span>Cisco</span>
+              <h3>Cisco Junior Cybersecurity Analyst</h3>
+              <p>Skill area: Cybersecurity analysis</p>
+              <strong>Completed</strong>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <article class="certificate-card h-100">
+              <span>SFIA</span>
+              <h3>SFIA Digital Badge</h3>
+              <p>Skill area: Digital professional capability</p>
+              <strong>Completed</strong>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <article class="certificate-card h-100">
+              <span>Microsoft Learn</span>
+              <h3>Azure Security / AZ-500 Learning Path</h3>
+              <p>Skill area: Azure security</p>
+              <strong>In Progress</strong>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section section-anchor" id="about" data-section>
+      <div class="container">
+        <div class="row align-items-start g-5">
+          <div class="col-lg-5">
+            <p class="section-eyebrow">About</p>
+            <h2>Secure, user-friendly software for real teams.</h2>
+            <p class="text-muted">
+              I am an AI Software Developer focused on building secure, user-friendly digital solutions. My work combines full-stack development, Azure cloud services, AI integration, data insights, and business problem-solving. I enjoy building applications that turn data into useful decisions and help teams work better.
+            </p>
+          </div>
+          <div class="col-lg-7">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="skill-card">
+                  <h3>Frontend</h3>
+                  <p>React, Vite, Tailwind CSS</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="skill-card">
+                  <h3>Backend</h3>
+                  <p>C#, ASP.NET Core, REST APIs</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="skill-card">
+                  <h3>Cloud</h3>
+                  <p>Azure Static Web Apps, Azure App Service, Azure Storage</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="skill-card">
+                  <h3>AI &amp; Data</h3>
+                  <p>Azure AI, dashboards, insights, recommendations</p>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="skill-card">
+                  <h3>Security</h3>
+                  <p>API security, privacy, access control</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section bg-dark-section section-anchor" id="contact" data-section>
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5">
+            <p class="section-eyebrow text-white-50">Contact</p>
+            <h2 class="text-white">Let's work together</h2>
+            <p class="text-white-50">Open to junior cloud, AI developer, full-stack, and security-focused roles.</p>
+            <div class="contact-details">
+              <a href="mailto:zjongola@gmail.com"><i class="fa-solid fa-envelope"></i> zjongola@gmail.com</a>
+              <a href="https://www.linkedin.com/in/yonela-jongola" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+              <a href="https://github.com/yonelajongola" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> github.com/yonelajongola</a>
+              <p><i class="fa-solid fa-location-dot"></i> Cape Town, South Africa</p>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <form class="contact-form" action="https://formspree.io/f/mwkalajy" method="POST">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" id="name" name="name" class="form-control" autocomplete="name" required />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="_replyto" class="form-control" autocomplete="email" required />
+              </div>
+              <div class="mb-4">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" class="form-control" rows="6" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-branding">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer bg-light">
+    <div class="container text-center">
+      <a href="mailto:zjongola@gmail.com" class="email-link">zjongola@gmail.com</a>
+      <div class="social-links d-flex justify-content-center my-4">
+        <a href="https://github.com/yonelajongola" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/yonela-jongola" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://twitter.com/yonelajongola" target="_blank" rel="noopener noreferrer" aria-label="Twitter profile"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p class="small text-muted mb-0">Yonela Jongola | AI Cloud Developer</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
